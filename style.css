@@ -1,0 +1,188 @@
+/*0 - Configuração geral do site*/
+*{
+    margin: 0;;
+}
+
+body{
+    font-family: 'David Libre', serif;
+    margin: 0 200px 0 200px;
+    /*background-color: beige;*/
+    background-image: linear-gradient(135deg,rgb(214, 214, 196),rgb(190, 207, 190),rgb(170, 170, 206),rgb(206, 187, 206));
+}
+
+/*1 - Configuração do cabeçalho do site*/
+header{
+    background-color: beige;
+    height: auto;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    animation: titulo1 5s infinite;
+}
+
+h1{
+    font-size: 40px;
+    animation: titulo 3s infinite;
+}
+
+@keyframes titulo1{
+    0% {background-color: chartreuse;}
+    25% {background-color: cyan;}
+    50% {background-color: darkseagreen;}
+    75% {background-color: cornsilk;}
+    100% {background-color: violet;}
+}
+
+@keyframes titulo{
+    0% {letter-spacing: 2px;}
+    50% {letter-spacing: 16px;}
+    100% {letter-spacing: 2px;}
+}
+
+h1:hover{
+    transform: scale(1.4);
+
+}
+
+
+/*2 - Configuração do manu*/
+nav{
+    background-color: black;
+    height: auto;
+    
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 25px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 15px 10px 15px;
+    font-size: 20px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+
+
+/*3 - Configuração do main*/
+    main{
+        height: auto;
+    }
+
+
+/*4 - Configuração do article*/
+    article{
+        height: auto;
+        width: 70%;
+        float: left
+    }
+
+    article h2{
+        padding: 15px 0 15px 10px;
+    }
+
+    .bloco{
+        height: 250px;
+    }
+
+    .bloco h2{
+        padding: 15px 0 15px 0;
+    }
+
+   .bloco img{
+        width: 200px;
+        height: 200px;
+        float: left;
+        padding: 15px 15px 20px 15px;
+    }
+
+    .bloco p{
+        padding-top: 10px;
+        padding-right: 50px;
+        text-align: justify;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+    }
+
+    article a:hover{
+        color: rgb(55, 205, 50);
+    }
+
+    blockquote{
+        padding: 10px;
+    }
+
+/*5 - Configuração do aside*/
+    aside{
+        height: auto;
+        width: 30%;
+        float: right;
+    }
+
+    aside section{
+        height: 270px;
+    }
+
+    aside section iframe,img{
+        height: 200px;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    aside section h3{
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    aside section iframe:hover{
+        transform: scale(1.1);
+    }
+
+    aside section a{
+        text-decoration: none;
+    }
+
+
+    aside section a:hover{
+        color: blue;
+        text-decoration: underline;
+    }
+
+    aside section a:link{
+        color: black;
+    }
+
+    aside section a:visited{
+        color: red;
+    }
+
+    side section a:active{
+        color: chartreuse;
+    }
+
+/*6 - Configuração do footer*/
+footer{
+    background-color: green;
+    height: auto;
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
