@@ -121,8 +121,18 @@ nav ul li a:hover{
         transform: scale(1.1);
     }
 
+    article a{
+        color: blue;
+        text-decoration: none;
+    }
+
     article a:hover{
-        color: rgb(55, 205, 50);
+        color: red;
+        text-decoration: underline black;
+    }
+
+    article a:active{
+        color: magenta;
     }
 
     blockquote{
@@ -157,24 +167,13 @@ nav ul li a:hover{
 
     aside section a{
         text-decoration: none;
+        color: blue;
     }
 
 
     aside section a:hover{
-        color: blue;
-        text-decoration: underline;
-    }
-
-    aside section a:link{
-        color: black;
-    }
-
-    aside section a:visited{
-        color: red;
-    }
-
-    side section a:active{
-        color: chartreuse;
+        color: orangered;
+        text-decoration: underline black;
     }
 
 /*6 - Configuração do footer*/
